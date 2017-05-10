@@ -1,3 +1,6 @@
+# Bash
+export PS1="\[\033[36m\]\u\[\033[m\]@\[\033[32m\]\h:\[\033[33;1m\]\w\[\033[m\]\$ "
+shopt -s expand_aliases
 # Platform specific
 if [[ "$OSTYPE" = "darwin16" ]]; then
     [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
@@ -13,9 +16,6 @@ else
     # Navigation
     alias L='ls -lahF --color'
 fi
-# Bash
-export PS1="\[\033[36m\]\u\[\033[m\]@\[\033[32m\]\h:\[\033[33;1m\]\w\[\033[m\]\$ "
-shopt -s expand_aliases
 # History
 alias hh='history'
 alias h='history 10'
