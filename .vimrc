@@ -5,12 +5,15 @@ set autoread
 set wildmenu
 set ruler
 set cmdheight=2
+set number
+set rnu
 
 " Searching
 set hls
 set is
 set ic
 set smartcase 
+nnoremap <silent> <Esc><Esc> <Esc>:nohlsearch<CR><Esc>
 
 " Colors and Fonts
 syntax enable
@@ -19,17 +22,17 @@ colorscheme desert
 " Text editing
 set expandtab
 set smarttab
-set shiftwidth=4
 set tabstop=4
 
-" line break 500 characters
+" Line break 500 characters
 set lbr
 set tw=500
 
+" Auto indent 
 set ai
 set si
 set wrap
-
+set shiftwidth=4
 
 " Status line
 
