@@ -7,6 +7,7 @@ set ruler
 set cmdheight=2
 set number
 set rnu
+set noswapfile
 
 " Searching
 set hls
