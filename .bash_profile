@@ -11,6 +11,8 @@ if [[ "$OSTYPE" = "darwin16" ]]; then
     # Navigation
     alias L='ls -lahGF'
     alias o='open .'
+    alias lib='cdl ~/Library'
+    alias rlib='cdl /Library'
 else
     # Bash Editing
     alias editbash='/usr/bin/vim ~/.bashrc'
@@ -32,6 +34,11 @@ alias l='c; L'
 alias ..='cd ..; l'
 # Functions
 cdl() {
+    if [[ $# -eq 0 ]]; then
+        cd; l
+        return 0
+    fi
+
     cd "$1" && c && L
 }
 
