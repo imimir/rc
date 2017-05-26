@@ -32,7 +32,7 @@ alias l='c; L'
 alias ..='cd ..; l'
 # Functions
 cdl() {
-    cd $1 && c && L
+    cd "$1" && c && L
 }
 
 here() {
