@@ -1,3 +1,4 @@
+" General
 set history=700
 filetype plugin on
 filetype indent on
@@ -7,7 +8,13 @@ set ruler
 set cmdheight=2
 set number
 set rnu
+set encoding=utf8
+set cursorline
+
+" Backups, Swap files
 set noswapfile
+set nowb
+set nobackup
 
 " Searching
 set hls
@@ -19,6 +26,7 @@ nnoremap <silent> <Esc><Esc> <Esc>:nohlsearch<CR><Esc>
 " Colors and Fonts
 syntax enable
 colorscheme desert
+hi CursorLine cterm=none ctermfg=0 ctermbg=7
 
 " Text editing
 set expandtab
