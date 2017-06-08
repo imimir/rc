@@ -13,6 +13,8 @@ if [[ "$OSTYPE" = "darwin16" ]]; then
     alias o='open .'
     alias lib='cdl ~/Library'
     alias rlib='cdl /Library'
+    alias raps='cdl /Library/Application\ Support'
+    alias aps='cdl ~/Library/Application\ Support'
 else
     # Bash Editing
     alias editbash='/usr/bin/vim ~/.bashrc'
