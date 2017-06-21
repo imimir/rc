@@ -15,6 +15,7 @@ if [[ "$OSTYPE" = "darwin16" ]]; then
     alias rlib='cdl /Library'
     alias raps='cdl /Library/Application\ Support'
     alias aps='cdl ~/Library/Application\ Support'
+    alias cleanup="find . -type f -name '*.DS_Store' -ls -delete"
 else
     # Bash Editing
     alias editbash='/usr/bin/vim ~/.bashrc'
