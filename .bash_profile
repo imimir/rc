@@ -50,5 +50,5 @@ here() {
 }
 
 ihere() {
-    find . -maxdepth 1 -type f -iname "*$1*" | tr '\n' '\0' | xargs -0 grep -i "$2" 
+    find . -maxdepth 1 -type f -iname "*$1*" -print0 | xargs -0 grep -i "$2" 
 }
