@@ -48,3 +48,7 @@ cdl() {
 here() {
     find . -maxdepth 1 -iname "*$1*"
 }
+
+ihere() {
+    find . -maxdepth 1 -type f -iname "*$1*" | tr '\n' '\0' | xargs -0 grep -i "$2" 
+}
